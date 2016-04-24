@@ -4,4 +4,14 @@
     <string name="title_activity_management">ManagementActivity</string>
     <string name="title_activity_configuration">ConfigurationActivity</string>
     <string name="title_activity_loading_activitie">LoadingActivitie</string>
+    <string name="title_activity_add_medication_activitie">AddMedicationActivitie</string>
+
+
+    <string-array name="routes">
+        <item>Oral</item>
+        <item>Ocular</item>
+        <item>Cutânea</item>
+        <item>Anal</item>
+    </string-array>
+    <string name="title_activity_profile_activitie">ProfileActivitie</string>
 </resources>

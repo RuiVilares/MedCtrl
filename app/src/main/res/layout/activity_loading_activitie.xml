@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fullBackground"
+    android:background="@drawable/full_background"
     android:fitsSystemWindows="true"
     tools:context="com.medctrl.mdteam.medctrl.activities.LoadingActivitie">
 
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="250dip"
         android:orientation="vertical"
-        android:background="@drawable/MedcontrolLogo">
+        android:background="@drawable/medcontrol">
     </LinearLayout>
 
     <include layout="@layout/content_loading_activitie" />
