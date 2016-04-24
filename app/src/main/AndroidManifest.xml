@@ -11,7 +11,7 @@
         <activity
             android:name=".AlarmListActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activities.ManagementActivity"
             android:label="@string/title_activity_management"
@@ -26,6 +26,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activities.LoadingActivitie"
+            android:label="@string/title_activity_loading_activitie"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.AddMedicationActivitie"
+            android:label="@string/title_activity_add_medication_activitie"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ProfileActivitie"
+            android:label="@string/title_activity_profile_activitie"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".activities.AlarmActivity"
             android:label="@string/title_activity_alarm"
