@@ -14,4 +14,5 @@
         <item>Anal</item>
     </string-array>
     <string name="title_activity_profile_activitie">ProfileActivitie</string>
+    <string name="title_activity_alarm">AlarmActivity</string>
 </resources>
