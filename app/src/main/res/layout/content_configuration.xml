@@ -20,7 +20,7 @@
         android:textAlignment="center"
         android:text="PERFIL DO CUIDADOR"
         android:textSize="25dip"
-        android:layout_marginTop="5dip"
+        android:layout_marginTop="-5dip"
         android:layout_marginBottom="10dip"/>
 
     <EditText
@@ -35,12 +35,14 @@
         android:id="@+id/caretakerName"
         android:layout_marginBottom="2dip"
         android:layout_marginTop="2dip"
+        android:singleLine="true"
         />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="EMAIL"
+        android:inputType="textEmailAddress"
         android:padding="10dip"
         android:textColorHint="@color/colorInnerBoxes"
         android:layout_marginLeft="10dip"
@@ -49,13 +51,16 @@
         android:id="@+id/caretakerEmail"
         android:layout_marginBottom="2dip"
         android:layout_marginTop="2dip"
+        android:singleLine="true"
         />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="phone"
         android:hint="TELEMÓVEL"
         android:padding="10dip"
+        android:maxLength="9"
         android:textColorHint="@color/colorInnerBoxes"
         android:layout_marginLeft="10dip"
         android:layout_marginRight="10dip"
@@ -63,6 +68,7 @@
         android:id="@+id/caretakerCellphone"
         android:layout_marginBottom="20dip"
         android:layout_marginTop="2dip"
+        android:singleLine="true"
         />
 
     <LinearLayout
@@ -175,13 +181,15 @@
         android:id="@+id/pin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="numberPassword"
         android:layout_marginLeft="100dip"
         android:layout_marginRight="100dip"
         android:hint="PIN"
         android:background="@drawable/pin_box"
         android:textSize="20dip"
-        android:textColor="#FFF"
-        android:textAlignment="center"/>
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:maxLength="4"/>
 
     <TextView
         android:id="@+id/readyButton"
@@ -195,7 +203,8 @@
         android:textColor="@color/colorPrimary"
         android:layout_marginLeft="100dip"
         android:layout_marginRight="97dip"
-        android:background="@drawable/button_background"/>
+        android:background="@drawable/button_background"
+        android:paddingBottom="5dip"/>
 
 
 </LinearLayout>
