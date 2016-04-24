@@ -141,7 +141,6 @@
             android:padding="10dip"
             android:textColorHint="@color/colorInnerBoxes"
             android:layout_marginLeft="10dip"
-            android:layout_marginRight="10dip"
             android:background="@drawable/rect_text_edit"
             android:id="@+id/time"
             android:layout_marginBottom="2dip"
@@ -151,7 +150,13 @@
         <ImageView
             android:layout_width="50dip"
             android:layout_height="50dip"
-            android:layout_marginLeft="40dip"
+            android:layout_marginLeft="0dip"
+            android:src="@drawable/add"/>
+
+        <ImageView
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="0dip"
             android:src="@drawable/question_mark"/>
 
 
@@ -194,7 +199,6 @@
         android:layout_marginTop="2dip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimaryDark"
         android:spinnerMode="dropdown" />
 
     <LinearLayout
