@@ -29,4 +29,12 @@
         android:id="@+id/dosageLayout"
         android:layout_gravity="center"></LinearLayout>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/button_animation"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:id="@+id/rightButton"/>
+
 </LinearLayout>

@@ -1,5 +1,6 @@
 package com.medctrl.mdteam.medctrl.activities;
 
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -7,14 +8,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.util.TypedValue;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.medctrl.mdteam.medctrl.R;
 
 public class AlarmActivity extends AppCompatActivity {
+
+    ImageView rightbutton = null;
+    AnimationDrawable rightButtonAnimation = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +30,13 @@ public class AlarmActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
+        rightbutton = (ImageView) findViewById(R.id.rightButton);
+        rightbutton.setBackgroundResource(R.drawable.button_animation);
+        rightButtonAnimation = (AnimationDrawable) rightbutton.getBackground();
+
         double dose = 0.5;
         setDosageGraphic(dose);
+
     }
 
     private void setDosageGraphic(double v) {
@@ -62,6 +73,11 @@ public class AlarmActivity extends AppCompatActivity {
         }
 
         dosageLayout.addView(image);
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus){
+        rightButtonAnimation.start();
     }
 
 

@@ -204,7 +204,8 @@
         android:layout_marginLeft="100dip"
         android:layout_marginRight="97dip"
         android:background="@drawable/button_background"
-        android:paddingBottom="5dip"/>
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"/>
 
 
 </LinearLayout>
